@@ -1,0 +1,119 @@
+/* Обнуляем отступы и отступы для всего документа */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шрифты для текста */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Цвета для текста и фона */
+body {
+  color: #000;
+  background-color: #f2f2f2;
+}
+
+/* Центрирование контейнера и добавление отступов */
+.container {
+  max-width: 800px;
+  margin: 15% auto; /* Добавляем отступы от края экрана */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+/* Стили для заголовка */
+h1 {
+  color: #0066ff;
+  text-align: center;
+}
+
+/* Общий стиль для полей ввода */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+.button {
+  width: 100%; /* Элементы займут всю доступную ширину */
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Размер шрифта для полей ввода и кнопок */
+}
+
+/* Стили для кнопок */
+input[type="submit"],
+.button {
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-align: center;
+  font-size: 16px; /* Размер шрифта для кнопок */
+}
+
+input[type="submit"]:hover,
+.button:hover {
+  background-color: #0052cc;
+}
+
+/* Стили для ссылки */
+a {
+  display: block;
+  text-decoration: none;
+  color: #0066ff;
+  text-align: center;
+  padding: 12px 20px;
+  border: 1px solid #0066ff;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 16px; /* Размер шрифта для ссылки */
+}
+
+a:hover {
+  background-color: #0052cc;
+}
+
+/* Стили для списка пользователей */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Стили для текстовой метки */
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Стили для имени пользователя и адреса электронной почты */
+.username {
+  color: #0066ff;
+}
+
+.email {
+  color: #0066ff;
+}
+
+/* Медиа-запросы для улучшения отображения на различных устройствах */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Уменьшаем отступы в мобильной версии */
+  }
+}
