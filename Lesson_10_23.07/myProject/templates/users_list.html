@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon"><body>
+  <div class="container">
+    <h1>User List</h1>
+    <ul>
+      {% for user in users %}
+      <li>
+        <span class="label">Username:</span>
+        <span class="username">{{ user.username }}</span><br>
+        <span class="label">Email:</span>
+        <span class="email">{{ user.email }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/" class="button">Go back</a>
+  </div>
+</body>
+</html>
